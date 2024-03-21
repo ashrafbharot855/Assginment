@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Collection</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+  <style>
+    .card {
+        height: 100%;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.1); ;
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover; 
+    }
+
+  </style>
+</head>
+
+<body tabindex="-1">
+    <%- include('partials/navbar', {page:'/home'}) %>
+
+  <div class="container mx-auto">
+      <div class="hero bg-base-200 rounded-lg p-6">
+          <div class="hero-content text-center ">
+              <div class="max-w-lg">
+                  <h1 class="text-5xl font-bold">Lego Collection</h1>
+      
+                  <p class="py-6">"Unleash Your Imagination, Brick by Brick: Explore, Create, and Build Your Own Adventure with LEGO Sets!".</p>
+              
+                  <a href="/lego/sets" class="btn btn-primary">Explore Collection</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+
+          <div class="card bg-base-100 shadow-xl">
+              <figure>
+              <img class="w-full" src="https://cdn.rebrickable.com/media/sets/7049-1.jpg" alt="Lego set - 7049-1">
+              </figure>
+              <div class="card-body">
+              <h2 class="card-title">Alien Striker</h2>
+              <p>Enter a realm beyond the stars with the Alien Striker LEGO set, where imagination meets intergalactic adventure! Unveil a world of extraterrestrial wonders as you construct this thrilling spacecraft and embark on daring missions across the cosmos.</p>
+                  <div class="card-actions justify-end">
+                          <a href="/lego/sets/001-1" class="btn btn-primary">View</a>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full" src="https://cdn.rebrickable.com/media/sets/7048-1.jpg" alt="Lego Set 7048-1">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Troll Warship</h2>
+            <p>Prepare for an epic battle on the high seas with the Troll Warship LEGO set! Dive into a world of medieval fantasy where mighty trolls rule the waves and fearless warriors defend the realm against their onslaught. Construct the formidable warship and embark on a daring quest to thwart the trolls' sinister plans.</p>
+            <div class="card-actions justify-end">
+                <a href="/lego/sets/70411-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      <div class="card bg-base-100 shadow-xl">
+          <figure>
+          <img class="w-full " src="https://cdn.rebrickable.com/media/sets/7046-1.jpg" alt="Lego Set 7046-1">
+          </figure>
+          <div class="card-body">
+          <h2 class="card-title">Fire Command Craft</h2>
+          <p>Embark on daring rescue missions and battle blazes with the Fire Command Craft LEGO set! Dive into the heart of firefighting action as you construct this versatile waterborne vehicle, designed to tackle emergencies on land and sea with precision and speed.</p>
+              <div class="card-actions justify-end">
+                  <a href="/lego/sets/70434-1" class="btn btn-primary">View</a>
+              </div>
+          </div>
+      </div>
+
+      </div>
+  </div>
+  
+</body>
+
+</html>
